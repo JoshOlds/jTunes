@@ -1,21 +1,102 @@
 <html>
-  <head>
-    <title>jTunes</title>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    
-  </head>
 
-  <body>
+<head>
+  <title>jTunes</title>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+
+  <div class="row align-center" id="form-row">
+    <div class="small-12 large-6 column" id="form-column">
       <form class="form-inline">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-          <input type="text" class="form-control" id="artist" placeholder="Artist Name"/>
-          <button type="button" class="btn btn-primary" id="get-music-button" onclick="getMusic()">Get Music</button>
+        <div class="form-group text-center">
+          <input type="text" class="form-control" id="artist" placeholder="Artist Name" />
+          <button type="button" class="button" id="get-music-button" onclick="getMusic()">Get Music</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- Template -->
+  <div class="row" id="song-space">
+
+  </div>
+
+  <!--<div class="row">
+    <div class="small-12 large-4 column card-container">
+      <div class="row card-contents text-center">
+        <div class="play-container">
+          <img class="album-art" src="http://is5.mzstatic.com/image/thumb/Music5/v4/a8/44/01/a84401d6-fe72-07c7-24e2-1b52f4b95590/source/400x400bb.jpg"
+            alt="Coming Soon image placeholder">
+          <div class="play">
+            <i class="fa fa-play-circle-o play-icon" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="small-12 column align-self-bottom">
+          <h4>Crazy Train</h4>
+          <h5>The Essential Ozzy Osbourne</h5>
+          <button class="button success" href="#"><strong class="button-text">$4.99 - Buy Now!</strong></button>
+        </div>
+      </div>
+    </div>
+  </div>-->
 
 
-      <script src="js/itunes-service.js"></script>
-      <script src="js/app.js"></script>
-  </body>
+  <!--
+  <div class="small-12 large-4 column card">
+    <img src="http://is5.mzstatic.com/image/thumb/Music5/v4/a8/44/01/a84401d6-fe72-07c7-24e2-1b52f4b95590/source/200x200bb.jpg"
+      alt="Coming Soon image placeholder">
+    <div class="card-container text-center">
+      <h2>Project Type</h2>
+      <h1>Project Name</h1>
+      <button class="hollow button" href="#"><strong>View Project</strong></button>
+    </div>
+  </div>
+
+  <div class="small-12 large-4 column card">
+    <img src="http://is5.mzstatic.com/image/thumb/Music5/v4/a8/44/01/a84401d6-fe72-07c7-24e2-1b52f4b95590/source/200x200bb.jpg"
+      alt="Coming Soon image placeholder">
+    <div class="card-container text-center">
+      <h2>Project Type</h2>
+      <h1>Project Name</h1>
+      <button class="hollow button" href="#"><strong>View Project</strong></button>
+    </div>
+  </div>-->
+
+  <!--<div class="small-3 column align-self-middle">
+            <img id="album-art" class="album-art" src="http://is5.mzstatic.com/image/thumb/Music5/v4/a8/44/01/a84401d6-fe72-07c7-24e2-1b52f4b95590/source/400x400bb.jpg">
+          </div>
+
+          <div class="small-6 column">
+            <h3 id="artist-text" class="artist-text">Ozzy Osbourne</h3>
+            <h4 id="collection-text" class="collection-text">The Essential Ozzy Osbourne</h4>
+            <h1 id="track-name" class="track-name">Crazy Train</h1>
+            <audio controls>
+              <source src="http://a1593.phobos.apple.com/us/r1000/156/Music/cc/21/60/mzm.cnziqmtw.aac.p.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+          </div>
+
+          
+
+          <div class="small-3 column">
+            <p id="price-text" class="price-text">Price: $14.99</p>
+          </div>-->
+
+
+
+
+
+
+
+
+
+  <script src="js/itunes-service.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
