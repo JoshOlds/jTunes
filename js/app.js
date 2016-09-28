@@ -22,7 +22,7 @@ function drawSongs(songList) {
           <img class="album-art" src="${item.albumArt}"
             alt="${item.collection} album image">
           <div class="play">
-            <i class="fa fa-play-circle-o play-icon" aria-hidden="true"></i>
+            
           </div>
         </div>
         <div class="small-12 column align-self-top">
