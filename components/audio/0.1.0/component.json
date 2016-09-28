@@ -1,0 +1,27 @@
+{
+  "name": "audio",
+  "description": "Sexy audio player (requires audio tag support)",
+  "version": "0.1.0",
+  "keywords": [
+    "audio",
+    "player",
+    "music"
+  ],
+  "dependencies": {
+    "component/domify": "0.1.0",
+    "component/event": "*",
+    "component/autoscale-canvas": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js",
+    "progress.js",
+    "template.js"
+  ],
+  "styles": [
+    "audio.css"
+  ],
+  "repository": "component/audio",
+  "resolved": "346e4075fb697f4e25d4fe9860c762ab6bdc7466"
+}

@@ -1,0 +1,1 @@
+module.exports = '<div class="audio">\n  <a href="#" class="audio-play">▶</a>\n</div>';

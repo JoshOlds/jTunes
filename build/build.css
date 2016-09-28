@@ -1,0 +1,36 @@
+
+.audio {
+  position: relative;
+}
+
+.audio > canvas {
+  position: absolute;
+  top: -5;
+  left: -5;
+  pointer-events: none;
+}
+
+.audio-play {
+  display: block;
+  /*border: 1px solid #ddd;*/
+  -webkit-text-stroke: 1px black;
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(128,128,128, .2);
+  text-decoration: none;
+  color: #494949;
+}
+
+.audio-play:hover {
+  color: #00ffff;
+  background: transparent;
+}
+
+.audio-play:active {
+  background: #f5f5f5;
+}
+
