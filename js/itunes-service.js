@@ -1,6 +1,9 @@
+$("#loader-main").fadeTo(1, 0);
 var itunes = {
     getMusicByArtist: function(artist, cb) {
-      
+      var loaderElement = document.getElementById("loader-main-area");
+      $("#loader-main").fadeTo(1000, 1);
+      loaderElement.innerHTML = `<div class="loader-main" id="loader-main">Loading...</div>`
       var url = '//bcw-getter.herokuapp.com/?url=';
       var url2 = 'https://itunes.apple.com/search?term=' + artist;
       var apiUrl = url + encodeURIComponent(url2);
@@ -23,6 +26,7 @@ var itunes = {
         }
                 })
         $('#get-music-button').text('GET MUSIC');
+        $("#loader-main").fadeTo(2000, 0);
         return songList;
       })
     }
