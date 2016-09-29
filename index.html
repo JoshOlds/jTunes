@@ -2,7 +2,7 @@
 
 <head>
   <title>jTunes</title>
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="build/build.css">
@@ -14,6 +14,9 @@
 
   <div class="row align-center align-bottom">
     <div class="small-12 column">
+      <div id="loader-main-area">
+        <div class="loader-main" id="loader-main">Loading...</div>
+      </div>
       <h1 class="j-tunes">
         jTunes
       </h1>
@@ -25,10 +28,11 @@
       <form class="form-inline" onsubmit="getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
         <div class="form-group text-center">
-          <input type="text" class="form-control" id="artist" placeholder="Artist Name" />
-          
+          <input type="text" class="form-control" id="artist" placeholder="Search" />
+          <button type="submit" class="button">Get Music</button>
         </div>
       </form>
+      
     </div>
   </div>
 
