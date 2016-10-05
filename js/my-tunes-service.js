@@ -17,14 +17,14 @@ function MyTunes(){
 
 
     this.loadUsers = function(){
-        var localData = localStorage.getItem("users");
+        var localData = localStorage.getItem("jTunes-users");
         if(localData){
             _users = JSON.parse(localData);
         }
     }
 
     this.saveUsers = function(){
-        localStorage.setItem("users", JSON.stringify(_users));
+        localStorage.setItem("jTunes-users", JSON.stringify(_users));
         console.log("Saving Users!")
     }
 
