@@ -21,7 +21,9 @@ var itunes = {
                       collection: song.collectionName,
                       price: song.collectionPrice,
                       preview: song.previewUrl,
-                      link: song.trackViewUrl
+                      link: song.trackViewUrl,
+                      id: song.trackId,
+                      rating: 0
                     };
         }
                 })
