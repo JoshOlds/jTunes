@@ -26,7 +26,16 @@ body{
     background-size: cover;
 }
 .row{
-    min-height: 25%;
+    max-height: 20%;
+}
+
+.row-login{
+    min-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+    height: 200px;
 }
 
 .j-tunes{
@@ -34,7 +43,33 @@ body{
     text-align: center;
 }
 
+.login-text{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
+
+.my-playlists{
+    color: white;
+    text-align: right;
+}
+
+.select-playlist{
+    width: 80%;
+}
+
+.button-load-playlist{
+    width: 80%;
+}
+.button-add-playlist{
+    width: 39%;
+}
+.button-delete-playlist{
+    width: 39%;
+}
 
  .form-control{
      max-width:75%;
@@ -44,6 +79,21 @@ body{
 .card-container{
     padding: 40px;
 }
+
+.thumbs-text{
+    font-size: 36px;
+    color: lightblue;
+}
+.thumbs-up:hover {
+     cursor: pointer;
+     color: lightgreen;
+}
+.thumbs-down:hover {
+     cursor: pointer;
+     color: lightcoral;
+}
+
+
 
 .card-contents{
     background: rgba(128, 128, 128, 0.5);
@@ -70,7 +120,7 @@ body{
         font-size: 24px;
         font-style: italic;
     }
-    .button{
+    .button-buy{
         
         width: 80%;
         padding: 24px;
@@ -104,6 +154,9 @@ body{
         }  
     }
 }
+.green-background{
+    background: rgba(0,128,0,.5);
+}
 .play-container:hover > img{
     -webkit-filter: brightness(30%) ; /* Chrome, Safari, Opera */
     filter: brightness(30%) ;
@@ -121,6 +174,9 @@ body{
 
 .text-center{
     text-align: center;
+}
+.text-right{
+    text-align: right;
 }
 
 .card-song{
@@ -277,7 +333,19 @@ body{
         color: white;
         font-size: 120px;
     }
-    .button{
+    .login-text{
+        font-size: 30px;
+    }
+    .button-buy{
+        font-size: 60px;
+    }
+    .get-button{
+        font-size: 80px;
+    }
+    .button-add-song-to-playlist{
+        font-size: 60px;
+    }
+    .button-remove-song-from-playlist{
         font-size: 60px;
     }
      .form-control{
@@ -292,7 +360,19 @@ body{
         color: white;
         font-size: 120px;
     }
-    .button{
+    .login-text{
+        font-size: 30px;
+    }
+    .button-buy{
+        font-size: 60px;
+    }
+    .get-button{
+        font-size: 80px;
+    }
+    .button-add-song-to-playlist{
+        font-size: 60px;
+    }
+    .button-remove-song-from-playlist{
         font-size: 60px;
     }
      .form-control{
@@ -301,3 +381,4 @@ body{
      margin: 50px auto;
  }
  }
+
