@@ -83,6 +83,7 @@ function drawSongs(songList, playlistFlag) {
             <audio src="${item.preview}" id="audio${count}">
             </audio>
           </div>
+          
         </div>
         <div class="small-12 column align-self-top">
           <h4>${item.title}</h4>
@@ -98,20 +99,16 @@ function drawSongs(songList, playlistFlag) {
         </div>
       </div>
     </div>`
-
-        
-      //  count++;
+    count++; //Need this for audio player indexing
       }
-
-    });
-    
+    }); 
   }
 
   var songSpace = document.getElementById("song-space");
   songSpace.innerHTML = template;
-  if(playlistFlag){
-    updateIncludedSongs();
-  }
+  // if(playlistFlag){
+  //   updateIncludedSongs();
+  // }
 
   var audio = require('audio'); //Wonky way to create audio components... not sure if this is good or bad lol
   for (var i = 0; i < 50; i++) {
