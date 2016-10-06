@@ -1,3 +1,4 @@
+$(document).foundation();
 
 var audioArr = []; //Array of audio elements... global!
 var myUsersService = new MyTunes();
@@ -83,7 +84,9 @@ function drawSongs(songList, playlistFlag) {
             <audio src="${item.preview}" id="audio${count}">
             </audio>
           </div>
-          
+          <div class="video">
+            <button class="button secondary button-video" id="${item.id}" data-open="modal-video">Get Music Video!</button>
+          </div>
         </div>
         <div class="small-12 column align-self-top">
           <h4>${item.title}</h4>
@@ -106,9 +109,9 @@ function drawSongs(songList, playlistFlag) {
 
   var songSpace = document.getElementById("song-space");
   songSpace.innerHTML = template;
-  // if(playlistFlag){
-  //   updateIncludedSongs();
-  // }
+  if(playlistFlag){
+    updateIncludedSongs();
+  }
 
   var audio = require('audio'); //Wonky way to create audio components... not sure if this is good or bad lol
   for (var i = 0; i < 50; i++) {
@@ -260,3 +263,18 @@ $("body").on('click', '.thumbs-up', function (e) {
   var newRating = myUsersService.changeCurrentPlaylistSongRating(songID, 1);
   this.parentElement.innerHTML = this.parentElement.innerHTML.replace(`"num">${newRating - 1}</span>`, `"num">${newRating}</span>`)
 })
+
+$("body").on('click', '.button-video', function (e) {
+  e.preventDefault();
+  var songID = this.id;
+  var song = findSong(songID);
+  if(song){
+    var searchString = "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBYi_onEt-I9YGd_kTFjLBcQnRIV7UGL3c&maxResults=1&q=replaceme".replace("replaceme", (song.artist + " "+ song.title));
+    var response = $.getJSON(searchString).then(function(response){
+      var embedCode = response.items[0].id.videoId;
+      $("#video-frame").attr("src", "https://www.youtube.com/embed/"+embedCode);
+    });
+    
+  }
+})
+

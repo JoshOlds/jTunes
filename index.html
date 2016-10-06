@@ -2,23 +2,25 @@
 
 <head>
   <title>jTunes</title>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/48715cdeee.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="build/build.css">
   <script src="build/build.js"></script>
+
 </head>
 
 <body>
 
   <div class="row row-login" id="login-area">
     <div class="column small-5 small-offset-7 large-3 large-offset-9 text-right">
-				<a href="#" class="login-text" id="login-text">Login to view your Playlists</a>
-        <div id="playlist-area">
+      <a href="#" class="login-text" id="login-text">Login to view your Playlists</a>
+      <div id="playlist-area">
 
       </div>
     </div>
-    
+
   </div>
 
   <div class="row align-center align-bottom">
@@ -41,8 +43,8 @@
           <button type="submit" class="button get-button">Get Music</button>
         </div>
       </form>
-      
-      
+
+
     </div>
   </div>
 
@@ -124,6 +126,13 @@
 
 
 
+  <div class="large reveal" id="modal-video" data-reveal>
+    <div class="flex-video">
+      <iframe id="video-frame" width="854" height="480" src="https://www.youtube.com/embed/replaceme" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
 
 
 
@@ -131,6 +140,8 @@
   <script src="js/my-tunes-service.js"></script>
   <script src="js/itunes-service.js"></script>
   <script src="js/app.js"></script>
+
+
   <!--<script src="js/svg.js"></script>-->
 </body>
 
