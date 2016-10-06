@@ -100,7 +100,7 @@ function drawSongs(songList, playlistFlag) {
     </div>`
 
         
-        count++;
+      //  count++;
       }
 
     });
@@ -109,7 +109,9 @@ function drawSongs(songList, playlistFlag) {
 
   var songSpace = document.getElementById("song-space");
   songSpace.innerHTML = template;
-  updateIncludedSongs();
+  if(playlistFlag){
+    updateIncludedSongs();
+  }
 
   var audio = require('audio'); //Wonky way to create audio components... not sure if this is good or bad lol
   for (var i = 0; i < 50; i++) {
