@@ -184,6 +184,7 @@ $('#login-text').on('click', function (e) {
     </form> 
   `
   elem.after(template);
+  $("#field-login").focus();
 
 
 });
