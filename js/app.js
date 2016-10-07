@@ -40,6 +40,9 @@ function drawSongs(songList, playlistFlag) {
 
     songList.forEach(function (item) {
       if (item !== undefined) {
+        if(item.price === undefined){
+          item.price = 0.00;
+        }
         var price = item.price.toFixed(2);
         var collection = item.collection;
         if (collection === undefined) { collection = "" };
