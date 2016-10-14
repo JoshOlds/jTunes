@@ -193,7 +193,6 @@ $('#login-text').on('click', function (e) {
 });
 
 $("#login-area").on('submit', "#form-login", function (e) {
-  // debugger;
   e.preventDefault;
   console.log("test");
   var username = $('#field-login').val();
@@ -235,7 +234,6 @@ $("body").on('click', '.button-add-song-to-playlist', function (e) {
   var songID = this.id;
   var song = findSong(songID);
   myUsersService.addToCurrentPlaylist(song);
-  debugger
   this.innerHTML = "Song Added to Playlist!";
   updateIncludedSongs();
 })
