@@ -2,6 +2,7 @@
 
 <head>
   <title>jTunes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="//use.fontawesome.com/48715cdeee.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
@@ -13,8 +14,8 @@
 
 <body>
 
-  <div class="row row-login" id="login-area">
-    <div class="column small-5 small-offset-7 large-3 large-offset-9 text-right">
+  <div class="row row-login align-center" id="login-area">
+    <div class="column small-12 large-3 large-offset-9 text-center">
       <a href="#" class="login-text" id="login-text">Login to view your Playlists</a>
       <div id="playlist-area">
 
@@ -23,11 +24,8 @@
 
   </div>
 
-  <div class="row align-center align-bottom">
+  <div class="row align-center">
     <div class="small-12 column">
-      <div id="loader-main-area">
-        <div class="loader-main" id="loader-main">Loading...</div>
-      </div>
       <h1 class="j-tunes">
         jTunes
       </h1>
@@ -43,6 +41,9 @@
           <button type="submit" class="button get-button">Get Music</button>
         </div>
       </form>
+      <div id="loader-main-area">
+        <div class="loader-main" id="loader-main">Loading...</div>
+      </div>
 
 
     </div>
